@@ -4,28 +4,28 @@
 class AgentDeck < Formula
   desc "Terminal session manager for AI coding agents"
   homepage "https://github.com/asheshgoplani/agent-deck"
-  version "0.5.8"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/asheshgoplani/agent-deck/releases/download/v0.5.8/agent-deck_0.5.8_darwin_amd64.tar.gz"
-      sha256 "9041f2be7b74c2e51728df93c3e0d71675becc8369913f83e1f2efc01a5f09bb"
+      url "https://github.com/asheshgoplani/agent-deck/releases/download/v0.6.0/agent-deck_0.6.0_darwin_amd64.tar.gz"
+      sha256 "00a3e3342c0d84f76e651a0d37e7d2935137c4243fe7c7cf59adc3f4c95bdac7"
     end
     on_arm do
-      url "https://github.com/asheshgoplani/agent-deck/releases/download/v0.5.8/agent-deck_0.5.8_darwin_arm64.tar.gz"
-      sha256 "b9d2f79161daae1e6e56d38e4c94ee7fd08c6a6133db8fba90e9e0c9c1247e67"
+      url "https://github.com/asheshgoplani/agent-deck/releases/download/v0.6.0/agent-deck_0.6.0_darwin_arm64.tar.gz"
+      sha256 "d9f6d99df9131e12ca6a72ae5ac9c45341ce2aa5fe1260067c8add9d6262e987"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/asheshgoplani/agent-deck/releases/download/v0.5.8/agent-deck_0.5.8_linux_amd64.tar.gz"
-      sha256 "6534c3e91b02f6ddfe145248aacc2f7c5283341f6df559515c95b72243b595be"
+      url "https://github.com/asheshgoplani/agent-deck/releases/download/v0.6.0/agent-deck_0.6.0_linux_amd64.tar.gz"
+      sha256 "dc22e2b6845d256f5eb283edc5ab6bda94715d9bf354eaacae8d36e90835d70a"
     end
     on_arm do
-      url "https://github.com/asheshgoplani/agent-deck/releases/download/v0.5.8/agent-deck_0.5.8_linux_arm64.tar.gz"
-      sha256 "699708e7de7c1cfeffd9e7b453e0a51ad081aafffaa21a766f4abca05be37d68"
+      url "https://github.com/asheshgoplani/agent-deck/releases/download/v0.6.0/agent-deck_0.6.0_linux_arm64.tar.gz"
+      sha256 "fe3016859843da4c7d02314eeb87891f7243eec548437e0a571f914fecc24022"
     end
   end
 
@@ -36,6 +36,6 @@ class AgentDeck < Formula
   end
 
   test do
-    assert_match "agent-deck version", shell_output("#{bin}/agent-deck version")
+    system "#{bin}/agent-deck", "version"
   end
 end

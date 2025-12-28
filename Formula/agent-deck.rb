@@ -4,28 +4,28 @@
 class AgentDeck < Formula
   desc "Terminal session manager for AI coding agents"
   homepage "https://github.com/asheshgoplani/agent-deck"
-  version "0.8.1"
+  version "0.8.2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/asheshgoplani/agent-deck/releases/download/v0.8.1/agent-deck_0.8.1_darwin_amd64.tar.gz"
-      sha256 "78e03cfef342cd4dbe718cc932f9d4da1bd6f0643e8b766d0ae23baa81ff5e5d"
+      url "https://github.com/asheshgoplani/agent-deck/releases/download/v0.8.2/agent-deck_0.8.2_darwin_amd64.tar.gz"
+      sha256 "e18deab8557ca4705d8ac56898c8c82f9ed448c785c7f304e62a417f2b9e7bd8"
     end
     on_arm do
-      url "https://github.com/asheshgoplani/agent-deck/releases/download/v0.8.1/agent-deck_0.8.1_darwin_arm64.tar.gz"
-      sha256 "f0a3e52d14f776cc0464a6bddf5904b4f0d48589a90d530505565f622917eec6"
+      url "https://github.com/asheshgoplani/agent-deck/releases/download/v0.8.2/agent-deck_0.8.2_darwin_arm64.tar.gz"
+      sha256 "1daedd194637c33c3410bfce0cc664272ef05727a07a482c1743204bfafa4f75"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/asheshgoplani/agent-deck/releases/download/v0.8.1/agent-deck_0.8.1_linux_amd64.tar.gz"
-      sha256 "44ba1348bb46ae15eb2ee8cdea027ce0c612c036476becd4869bc1ba77f1a0ba"
+      url "https://github.com/asheshgoplani/agent-deck/releases/download/v0.8.2/agent-deck_0.8.2_linux_amd64.tar.gz"
+      sha256 "b8e270650133c7df42191658b9dc392c3b9735e090d6bb1cdbb2cc5fb032b0e7"
     end
     on_arm do
-      url "https://github.com/asheshgoplani/agent-deck/releases/download/v0.8.1/agent-deck_0.8.1_linux_arm64.tar.gz"
-      sha256 "dbfb502d0ac2124723465224ef5afadab855c06ab5798026132d50d01c4463ae"
+      url "https://github.com/asheshgoplani/agent-deck/releases/download/v0.8.2/agent-deck_0.8.2_linux_arm64.tar.gz"
+      sha256 "cf079de2f2df6fe019e6ab4e27d4ffca4cb95c24cbd3ab6ed9b794f4d30c9208"
     end
   end
 

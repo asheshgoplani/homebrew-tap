@@ -5,23 +5,23 @@
 class AgentDeck < Formula
   desc "Terminal session manager for AI coding agents"
   homepage "https://github.com/asheshgoplani/agent-deck"
-  version "1.7.68"
+  version "1.7.69"
   license "MIT"
 
   depends_on "tmux"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/asheshgoplani/agent-deck/releases/download/v1.7.68/agent-deck_1.7.68_darwin_amd64.tar.gz"
-      sha256 "e5954797e30ef5cd7e0e0b567084e58ea4a4c6ea361ac2eb7f6c6e98f2b5b298"
+      url "https://github.com/asheshgoplani/agent-deck/releases/download/v1.7.69/agent-deck_1.7.69_darwin_amd64.tar.gz"
+      sha256 "d1215ac08285a8f4d95aa50b47462ca5fa7afface1af536ea465130195d42fa4"
 
       define_method(:install) do
         bin.install "agent-deck"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/asheshgoplani/agent-deck/releases/download/v1.7.68/agent-deck_1.7.68_darwin_arm64.tar.gz"
-      sha256 "214ca15e7878acdd2a411b7f470ab640acc84eb2cf502da9edf4422615bc5982"
+      url "https://github.com/asheshgoplani/agent-deck/releases/download/v1.7.69/agent-deck_1.7.69_darwin_arm64.tar.gz"
+      sha256 "a5c24e5b902994d636a79eb39bb046e8a170eb60081426c0ad030133fbf15aae"
 
       define_method(:install) do
         bin.install "agent-deck"
@@ -31,15 +31,15 @@ class AgentDeck < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/asheshgoplani/agent-deck/releases/download/v1.7.68/agent-deck_1.7.68_linux_amd64.tar.gz"
-      sha256 "6da9e2574ed79156ee39c9e00835ca9b708176360fd6bd0d90d41c8c917c87e1"
+      url "https://github.com/asheshgoplani/agent-deck/releases/download/v1.7.69/agent-deck_1.7.69_linux_amd64.tar.gz"
+      sha256 "fca22df4e35e81c63aff5376cfc3885ca8249bf1087967a3906e7a9cf9150539"
       define_method(:install) do
         bin.install "agent-deck"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/asheshgoplani/agent-deck/releases/download/v1.7.68/agent-deck_1.7.68_linux_arm64.tar.gz"
-      sha256 "16cd5da35ad94516effae1662dfa78a0369679fb228d0850230cd68006db93f2"
+      url "https://github.com/asheshgoplani/agent-deck/releases/download/v1.7.69/agent-deck_1.7.69_linux_arm64.tar.gz"
+      sha256 "1fd6deda5b8434d85f6dffd4da468b3ba4ba558c0278ef8554bb0032123ed3aa"
       define_method(:install) do
         bin.install "agent-deck"
       end

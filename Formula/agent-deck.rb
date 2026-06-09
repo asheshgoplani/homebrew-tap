@@ -13,7 +13,7 @@ class AgentDeck < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/asheshgoplani/agent-deck/releases/download/v1.9.53/agent-deck_1.9.53_darwin_amd64.tar.gz"
-      sha256 "a4540a64a9cfe2cf253007d1205a84c92839599990bebed03698578cff0b1a25"
+      sha256 "63878fe4cad139fc9604f72e02779b1f1d8dc9a28259644eafd5634ca6790e55"
 
       define_method(:install) do
         bin.install "agent-deck"
@@ -21,7 +21,7 @@ class AgentDeck < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/asheshgoplani/agent-deck/releases/download/v1.9.53/agent-deck_1.9.53_darwin_arm64.tar.gz"
-      sha256 "6e468c553a29eb07b7bb005c3e55c2fb44b4982b38b3396edbf5f749f0c28e71"
+      sha256 "3a0505199142cd438c8796a72072f8cb1578ef686e19f1151e21c4e34561c43a"
 
       define_method(:install) do
         bin.install "agent-deck"
@@ -32,14 +32,14 @@ class AgentDeck < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/asheshgoplani/agent-deck/releases/download/v1.9.53/agent-deck_1.9.53_linux_amd64.tar.gz"
-      sha256 "65ae975a8dea9043aa1116addad63950c5861cfccc66bdbf4f2a0642965c9f5d"
+      sha256 "25166acf0486bfdaa076b18631f4b486158e364cc8919c6c97ba5c24b2aa2c4f"
       define_method(:install) do
         bin.install "agent-deck"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/asheshgoplani/agent-deck/releases/download/v1.9.53/agent-deck_1.9.53_linux_arm64.tar.gz"
-      sha256 "d8004bf572a4e63d66ee1692be890d48fbbce76d6eeaf75b9a98fe7b2126f00e"
+      sha256 "8144524bd0fbd50fce259feb4ce8b20a4e42661b79405bc3e176d5d9db735dcb"
       define_method(:install) do
         bin.install "agent-deck"
       end
